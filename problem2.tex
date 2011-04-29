@@ -1,0 +1,20 @@
+\begin{enumerate}
+\item[2)]
+\begin{itemize}
+\item[(a)] $P(V \leq c) = \prod P(W_l \leq c) = \prod F(c - \mu_l)$
+\item[(b)] $P(W_j = \max_i W_i) = 1 / L$ since the $W_j$ are iid.
+\item[(c)] We have
+  \begin{align*}
+    P(W_j = \max_i W_i) &= \int_0^\infty P(W_j = t) P(\max_{l \neq j} W_l \leq t) dt \\
+    &=\int_{-\infty}^\infty f(t - \mu_j) \prod_{l \neq j} F(t - \mu_l) \>dt
+  \end{align*}
+\item[(d)]
+  \begin{align*}
+    P(W_j = V) &= \int_{-\infty}^\infty exp(-(t-\mu_j)) \exp(-\exp(-(t-\mu_j))) \prod_{l \neq j} \exp(-\exp(-(t-\mu_l))) dt \\
+    &= \exp(\mu_j) \int_{-\infty}^\infty \exp(-t) \exp(-\exp(-t) \sum_{i=1}^L \exp(\mu_j)) dt \\
+    &= \exp(\mu_j) \int_{-\infty}^\infty u \exp(- u \sum_{i=1}^L \exp(\mu_j)) du \\
+    &= \frac{\exp(\mu_j)}{\sum_{i=1}^L \exp(\mu_j)}
+  \end{align*}
+
+\end{itemize}
+\end{enumerate}
