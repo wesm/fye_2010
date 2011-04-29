@@ -12,8 +12,8 @@
   \begin{align*}
     P(W_j = V) &= \int_{-\infty}^\infty exp(-(t-\mu_j)) \exp(-\exp(-(t-\mu_j))) \prod_{l \neq j} \exp(-\exp(-(t-\mu_l))) dt \\
     &= \exp(\mu_j) \int_{-\infty}^\infty \exp(-t) \exp(-\exp(-t) \sum_{i=1}^L \exp(\mu_j)) dt \\
-    &= \exp(\mu_j) \int_{-\infty}^\infty u \exp(- u \sum_{i=1}^L \exp(\mu_j)) du \\
-    &= \frac{\exp(\mu_j)}{\sum_{i=1}^L \exp(\mu_j)}
+    &= \exp(\mu_j) \int_{0}^\infty \exp(- u \sum_{i=1}^L \exp(\mu_j)) du \\
+    &= \frac{\exp(\mu_j)}{\sum_{l=1}^L \exp(\mu_l)}
   \end{align*}
 
 \end{itemize}
