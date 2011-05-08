@@ -13,7 +13,7 @@ P(X \leq Y)& = \sum_{x=0}^{n} \dbinom{n}{x}p^{x}(1-p)^{n-x} \int_{x}^{\infty} \l
 &=  (1 - \frac{1}{n} + \frac{1}{2n})^{n} \\
 &= (1 - \frac{1}{2n})^{n}\\
 \end{align*}
-Note that  $\lim_{n \rightarrow \infty} P(X_{n} \leq Y_{n}) = \lim_{n \rightarrow \infty} (1 - \frac{1}{2n})^{n} = e^{-2}$\\
+Note that  $\lim_{n \rightarrow \infty} P(X_{n} \leq Y_{n}) = \lim_{n \rightarrow \infty} (1 - \frac{1}{2n})^{n} = e^{-\frac{1}{2}}$\\
 Hence, it follows that $\sum_{n=1}^{\infty} P(X_{n} \leq Y_{n}) = \sum_{n=1}^{\infty} (1 - \frac{1}{2n})^{n} = \infty$ since the terms of the sum are all strictly positive.\\ 
 So, since $X_{n}$ and $Y_{n}$ are all independent, $P(X_{n} \leq Y_{n} \ \ i.o.) = 1$ by the Borel Zero-one law. 
 \end{itemize}
